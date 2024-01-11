@@ -4,20 +4,15 @@
 int main() {
     float r, sqarea, carea, area;
 
-    std::cout << "Enter the radius (r) of the circle:  ";
+    std::cout << "  ";
     std::cin >> r;
-
-    // คำนวณพื้นที่สี่เหลี่ยมจตุรัส (sqarea)
+    
     sqarea = 4 * pow(r, 2);
 
-    // คำนวณพื้นที่วงกลม (carea)
     carea = M_PI * pow(r, 2);
 
-    // คำนวณแรงเงา (area)
     area = sqarea - carea;
-
-    // แสดงผลลัพธ์
-    std::cout << "Area of the shaded region:" << area << std::endl;
+    std::cout << "Area:" << area << std::endl;
 
     return 0;
 }
